@@ -7,12 +7,24 @@
   <artifactId>gatling-maven-plugin-demo-java</artifactId>
   <version>3.9.6.FL-SNAPSHOT</version>
 
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>central</id>-->
+<!--      <name>Default Repository</name>-->
+<!--      <layout>default</layout>-->
+<!--      <url>https://repo1.maven.org/maven2</url>-->
+<!--      <snapshots>-->
+<!--        <enabled>false</enabled>-->
+<!--      </snapshots>-->
+<!--    </repository>-->
+<!--  </repositories>-->
+
   <properties>
     <!-- use the following if you're compiling with JDK 8-->
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+<!--    <maven.compiler.source>1.8</maven.compiler.source>-->
+<!--    <maven.compiler.target>1.8</maven.compiler.target>-->
     <!-- comment the 2 lines above and uncomment the line bellow if you're compiling with JDK 11 or 17 -->
-    <!--    <maven.compiler.release>11</maven.compiler.release>-->
+        <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <gatling.version>${project.version}</gatling.version>
     <gatling-maven-plugin.version>4.4.0</gatling-maven-plugin.version>
@@ -25,8 +37,17 @@
     <dependency>
       <groupId>io.gatling.highcharts</groupId>
       <artifactId>gatling-charts-highcharts</artifactId>
-      <version>${gatling.version}</version>
+      <version>3.9.5</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+
+      <groupId>org.apache.commons</groupId>
+
+      <artifactId>commons-lang3</artifactId>
+
+      <version>3.12.0</version>
+
     </dependency>
   </dependencies>
 
