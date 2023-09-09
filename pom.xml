@@ -40,6 +40,20 @@
       <version>3.9.5</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.6.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/ru.tinkoff/gatling-jdbc-plugin -->
+    <dependency>
+      <groupId>ru.tinkoff</groupId>
+      <artifactId>gatling-jdbc-plugin_2.13</artifactId>
+      <version>0.10.3</version>
+    </dependency>
+
     <dependency>
 
       <groupId>org.apache.commons</groupId>

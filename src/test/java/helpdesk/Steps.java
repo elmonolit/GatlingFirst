@@ -2,6 +2,10 @@ package helpdesk;
 
 import helpdesk.scenarioConfigs.Configs;
 import io.gatling.javaapi.core.ChainBuilder;
+import io.gatling.javaapi.core.Session;
+
+import java.util.List;
+import java.util.Random;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
@@ -32,7 +36,24 @@ public class Steps extends Configs {
                         .resources(http("/datatables_ticket_list/__URL__")
                                 .get("/datatables_ticket_list/#{dtlUrl}")
                                 .headers(headers_3)
+                                .check(jmesPath("data[*].id").ofList().saveAs("ticketList"))
+//                                .check(jmesPath("data[?status=='Reopened'].id").ofList().saveAs("duplicateList"))
+                                .check(jsonPath("$.data[?(@.status=='Reopened')].id").findRandom().saveAs("duplicateId"))
                         )
                 );
     }
+
+    protected static ChainBuilder openTicket = exec(session -> {
+        List<Integer> ticketIdList = session.getList("ticketList");
+        Integer ticketId = ticketIdList.get(new Random().nextInt(ticketIdList.size()));
+        Session newSession = session.set("ticketId", ticketId);
+        return newSession;
+    })
+            .exec(http("/tickets/__ticket_id__/")
+                    .get("/tickets/#{ticketId}/")
+                    .check(
+                            regex("<td>(.*?)\s<strong>").findRandom().optional().saveAs("assignedFlag"),
+                            regex("label\\sclass=\\\"radio-inline\\\".*value=\\'(.*?)\\'").find(0).saveAs("newStatus")
+                    )
+            );
 }
