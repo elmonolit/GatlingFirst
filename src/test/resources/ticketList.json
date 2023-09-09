@@ -1,0 +1,457 @@
+{
+  "data": [
+    {
+      "ticket": "1 [DH-1]",
+      "id": 1,
+      "priority": 3,
+      "title": "Some django-helpdesk Problem",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "6\u00a0years, 5\u00a0months ago",
+      "due_date": "6\u00a0years, 5\u00a0months ago",
+      "assigned_to": "None",
+      "submitter": "helpdesk@example.com",
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "2 [SP-2]",
+      "id": 2,
+      "priority": 4,
+      "title": "Something else",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "6\u00a0years, 5\u00a0months ago",
+      "due_date": "6\u00a0years, 5\u00a0months ago",
+      "assigned_to": "None",
+      "submitter": "helpdesk@example.com",
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "3 [DH-3]",
+      "id": 3,
+      "priority": 1,
+      "title": "Something with an attachment",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "6\u00a0years, 5\u00a0months ago",
+      "due_date": null,
+      "assigned_to": "MHadY DDfSU",
+      "submitter": "helpdesk@example.com",
+      "row_class": "danger",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "8 [SP-8]",
+      "id": 8,
+      "priority": 4,
+      "title": "tyarwhlafrgkggakjkul",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "MHadY DDfSU",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "10 [SP-10]",
+      "id": 10,
+      "priority": 3,
+      "title": "ofpkybsixussxlpxnbqq",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "MHadY DDfSU",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "11 [DH-11]",
+      "id": 11,
+      "priority": 4,
+      "title": "xrvfoqpzezqrgrosnvrk",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "25 [DH-25]",
+      "id": 25,
+      "priority": 5,
+      "title": "obmdddnkmlboprdrcuay",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "success",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "28 [DH-28]",
+      "id": 28,
+      "priority": 1,
+      "title": "ivudlyfcsjvuwlsjkchb",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "danger",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "33 [DH-33]",
+      "id": 33,
+      "priority": 2,
+      "title": "vkucfstlytqvdwqebija",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "warning",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "36 [SP-36]",
+      "id": 36,
+      "priority": 5,
+      "title": "nibmajwnkibfegargypb",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "success",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "42 [SP-42]",
+      "id": 42,
+      "priority": 1,
+      "title": "dyqngyjvcrinmnucrjle",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "MHadY DDfSU",
+      "submitter": null,
+      "row_class": "danger",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "43 [SP-43]",
+      "id": 43,
+      "priority": 3,
+      "title": "aaoyxshxyahpqkqfwxad",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "45 [DH-45]",
+      "id": 45,
+      "priority": 1,
+      "title": "zccqpgaxxjyjglyovsqm",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "danger",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "51 [SP-51]",
+      "id": 51,
+      "priority": 5,
+      "title": "qjltaenmyouenkbkgxbw",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "success",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "52 [SP-52]",
+      "id": 52,
+      "priority": 5,
+      "title": "rrperuvaasrzreejwsyw",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Reopened",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "success",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "55 [SP-55]",
+      "id": 55,
+      "priority": 4,
+      "title": "njcvajnltszbfgwptjzp",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "59 [DH-59]",
+      "id": 59,
+      "priority": 4,
+      "title": "obxdijpjydunueezefcd",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "61 [SP-61]",
+      "id": 61,
+      "priority": 4,
+      "title": "bauhbfahlvexuhfufbqo",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "64 [DH-64]",
+      "id": 64,
+      "priority": 4,
+      "title": "gdlsbammdtkrxakgupbd",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "65 [SP-65]",
+      "id": 65,
+      "priority": 4,
+      "title": "jjavrjdoraivebfifsxj",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "66 [DH-66]",
+      "id": 66,
+      "priority": 5,
+      "title": "crnjynmxhathonxfyvxx",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "success",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "67 [DH-67]",
+      "id": 67,
+      "priority": 4,
+      "title": "obckwrmtfwsjurbctjet",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "68 [SP-68]",
+      "id": 68,
+      "priority": 4,
+      "title": "ynkynkeyyaymtwdmhoqk",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "2\u00a0years ago",
+      "due_date": null,
+      "assigned_to": "None",
+      "submitter": null,
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "69 [DH-69]",
+      "id": 69,
+      "priority": 4,
+      "title": "2023-08-17 16:56:38 BQp8PuvZn024R9agrBfwZTk0HfngcMIyY1GZFFTU.boN",
+      "queue": {
+        "title": "Django Helpdesk",
+        "id": 1
+      },
+      "status": "Open",
+      "created": "6\u00a0days, 6\u00a0hours ago",
+      "due_date": "2\u00a0months, 3\u00a0weeks from now",
+      "assigned_to": "None",
+      "submitter": "",
+      "row_class": "",
+      "time_spent": "",
+      "kbitem": ""
+    },
+    {
+      "ticket": "70 [SP-70]",
+      "id": 70,
+      "priority": 1,
+      "title": "Computer is not working",
+      "queue": {
+        "title": "Some Product",
+        "id": 2
+      },
+      "status": "Open",
+      "created": "3\u00a0days, 1\u00a0hour ago",
+      "due_date": "2\u00a0days, 20\u00a0hours ago",
+      "assigned_to": "None",
+      "submitter": "UGJPS@gmail.com",
+      "row_class": "danger",
+      "time_spent": "",
+      "kbitem": ""
+    }
+  ],
+  "recordsFiltered": 68,
+  "recordsTotal": 68,
+  "draw": 1
+}

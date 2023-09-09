@@ -1,0 +1,203 @@
+RUN	helpdesk.HelpdeskSimulation	helpdesksimulation	1694205514064	 	3.9.5
+USER	Create User	START	1694205515310
+REQUEST	Login	/	1694205515308	1694205515311	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515317	1694205515319	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515322
+GROUP	Login	1694205515281	1694205515326	5	KO
+REQUEST	User Creation	/system_settings/	1694205515327	1694205515328	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515328	1694205515329	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515330	1694205515331	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515332
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515334
+GROUP	User Creation	1694205515327	1694205515335	3	KO
+REQUEST	Login	/	1694205515335	1694205515336	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515336	1694205515337	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515337
+GROUP	Login	1694205515335	1694205515338	2	KO
+REQUEST	User Creation	/system_settings/	1694205515338	1694205515338	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515339	1694205515339	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515340	1694205515340	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515340
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515341
+GROUP	User Creation	1694205515338	1694205515341	3	KO
+REQUEST	Login	/	1694205515341	1694205515342	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515342	1694205515343	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515343
+GROUP	Login	1694205515341	1694205515343	2	KO
+REQUEST	User Creation	/system_settings/	1694205515343	1694205515344	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515345	1694205515345	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515346	1694205515347	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515347
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515347
+GROUP	User Creation	1694205515343	1694205515348	3	KO
+REQUEST	Login	/	1694205515348	1694205515349	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515349	1694205515350	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515350
+GROUP	Login	1694205515348	1694205515350	2	KO
+REQUEST	User Creation	/system_settings/	1694205515351	1694205515351	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515352	1694205515352	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515353	1694205515353	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515354
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515354
+GROUP	User Creation	1694205515350	1694205515354	3	KO
+REQUEST	Login	/	1694205515355	1694205515355	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515355	1694205515356	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515356
+GROUP	Login	1694205515354	1694205515357	2	KO
+REQUEST	User Creation	/system_settings/	1694205515357	1694205515358	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515358	1694205515359	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515359	1694205515359	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515360
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515360
+GROUP	User Creation	1694205515357	1694205515360	3	KO
+REQUEST	Login	/	1694205515360	1694205515361	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515361	1694205515362	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515362
+GROUP	Login	1694205515360	1694205515362	2	KO
+REQUEST	User Creation	/system_settings/	1694205515363	1694205515363	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515364	1694205515364	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515365	1694205515365	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515365
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515366
+GROUP	User Creation	1694205515362	1694205515366	3	KO
+REQUEST	Login	/	1694205515366	1694205515367	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515367	1694205515368	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515368
+GROUP	Login	1694205515366	1694205515368	2	KO
+REQUEST	User Creation	/system_settings/	1694205515368	1694205515369	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515369	1694205515370	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515370	1694205515371	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515371
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515371
+GROUP	User Creation	1694205515368	1694205515372	3	KO
+REQUEST	Login	/	1694205515372	1694205515372	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515373	1694205515373	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515374
+GROUP	Login	1694205515372	1694205515374	2	KO
+REQUEST	User Creation	/system_settings/	1694205515374	1694205515375	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515375	1694205515376	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515376	1694205515377	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515377
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515377
+GROUP	User Creation	1694205515374	1694205515378	3	KO
+REQUEST	Login	/	1694205515378	1694205515379	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515379	1694205515380	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515380
+GROUP	Login	1694205515378	1694205515380	2	KO
+REQUEST	User Creation	/system_settings/	1694205515380	1694205515381	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515381	1694205515382	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515382	1694205515383	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515383
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515383
+GROUP	User Creation	1694205515380	1694205515383	3	KO
+REQUEST	Login	/	1694205515384	1694205515384	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515385	1694205515385	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515386
+GROUP	Login	1694205515384	1694205515386	2	KO
+REQUEST	User Creation	/system_settings/	1694205515386	1694205515387	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515387	1694205515388	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515388	1694205515389	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515389
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515389
+GROUP	User Creation	1694205515386	1694205515389	3	KO
+REQUEST	Login	/	1694205515390	1694205515390	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515391	1694205515391	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515391
+GROUP	Login	1694205515389	1694205515392	2	KO
+REQUEST	User Creation	/system_settings/	1694205515392	1694205515393	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515393	1694205515393	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515394	1694205515394	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515395
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515395
+GROUP	User Creation	1694205515392	1694205515395	3	KO
+REQUEST	Login	/	1694205515395	1694205515396	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515396	1694205515397	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515397
+GROUP	Login	1694205515395	1694205515398	2	KO
+REQUEST	User Creation	/system_settings/	1694205515398	1694205515399	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515399	1694205515400	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515400	1694205515401	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515401
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515401
+GROUP	User Creation	1694205515398	1694205515401	3	KO
+REQUEST	Login	/	1694205515402	1694205515403	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515403	1694205515403	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515404
+GROUP	Login	1694205515402	1694205515404	2	KO
+REQUEST	User Creation	/system_settings/	1694205515404	1694205515405	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515405	1694205515406	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515406	1694205515407	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515407
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515407
+GROUP	User Creation	1694205515404	1694205515408	3	KO
+REQUEST	Login	/	1694205515408	1694205515409	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515409	1694205515410	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515410
+GROUP	Login	1694205515408	1694205515410	2	KO
+REQUEST	User Creation	/system_settings/	1694205515410	1694205515411	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515411	1694205515412	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515412	1694205515413	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515413
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515413
+GROUP	User Creation	1694205515410	1694205515413	3	KO
+REQUEST	Login	/	1694205515414	1694205515414	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515415	1694205515415	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515415
+GROUP	Login	1694205515414	1694205515415	2	KO
+REQUEST	User Creation	/system_settings/	1694205515416	1694205515416	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515417	1694205515417	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515417	1694205515418	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515418
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515418
+GROUP	User Creation	1694205515416	1694205515419	3	KO
+REQUEST	Login	/	1694205515419	1694205515420	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515420	1694205515421	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515421
+GROUP	Login	1694205515419	1694205515421	2	KO
+REQUEST	User Creation	/system_settings/	1694205515421	1694205515422	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515422	1694205515423	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515423	1694205515424	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515424
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515424
+GROUP	User Creation	1694205515421	1694205515424	3	KO
+REQUEST	Login	/	1694205515425	1694205515425	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515425	1694205515426	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515426
+GROUP	Login	1694205515424	1694205515426	2	KO
+REQUEST	User Creation	/system_settings/	1694205515427	1694205515427	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515428	1694205515428	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515429	1694205515429	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515430
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515430
+GROUP	User Creation	1694205515426	1694205515430	3	KO
+REQUEST	Login	/	1694205515430	1694205515431	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515431	1694205515432	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515432
+GROUP	Login	1694205515430	1694205515432	2	KO
+REQUEST	User Creation	/system_settings/	1694205515433	1694205515433	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515434	1694205515434	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515434	1694205515435	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515435
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515436
+GROUP	User Creation	1694205515433	1694205515436	3	KO
+REQUEST	Login	/	1694205515436	1694205515437	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515439	1694205515441	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515441
+GROUP	Login	1694205515436	1694205515442	3	KO
+REQUEST	User Creation	/system_settings/	1694205515443	1694205515444	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515444	1694205515445	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515446	1694205515448	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515449
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515450
+GROUP	User Creation	1694205515442	1694205515450	4	KO
+REQUEST	Login	/	1694205515451	1694205515453	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	Login	/login/?next=/	1694205515454	1694205515455	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	/login/: Failed to build request: No attribute named 'csrf' is defined 	1694205515456
+GROUP	Login	1694205515451	1694205515457	3	KO
+REQUEST	User Creation	/system_settings/	1694205515457	1694205515459	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/	1694205515459	1694205515461	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST	User Creation	/admin/auth/user/add/	1694205515463	1694205515464	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	POST /admin/auth/user/add/: Failed to build request: No attribute named 'csrf' is defined 	1694205515464
+ERROR	POST /admin/auth/user/_userId_/change/": Failed to build request: No attribute named 'userId' is defined 	1694205515464
+GROUP	User Creation	1694205515457	1694205515465	5	KO
+USER	Create User	END	1694205515467

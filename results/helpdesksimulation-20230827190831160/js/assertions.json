@@ -1,0 +1,10 @@
+{
+  "simulation": "helpdesk.HelpdeskSimulation",
+  "simulationId": "helpdesksimulation-20230827190831160",
+  "start": 1693163312005,
+  "description": "",
+  "scenarios": ["Create Ticket"],
+  "assertions": [
+
+  ]
+}

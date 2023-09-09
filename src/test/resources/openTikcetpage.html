@@ -1,0 +1,555 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Helpdesk :: Powered by django-helpdesk</title>
+
+
+<!-- Bootstrap Core CSS -->
+
+<link href="/static/helpdesk/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Font Awesome -->
+<link href="/static/helpdesk/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+<!-- DataTables CSS-->
+<link href="/static/helpdesk/vendor/datatables/css/dataTables.bootstrap4.css" rel="stylesheet">
+<link href="/static/helpdesk/vendor/datatables/css/buttons.dataTables.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="/static/helpdesk/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+<!-- Morris Charts CSS -->
+
+<link href="/static/helpdesk/vendor/morrisjs/morris.css" rel="stylesheet">
+
+
+<!-- Custom CSS -->
+<link href="/static/helpdesk/css/sb-admin.css" rel="stylesheet">
+<link rel='stylesheet' href='/static/helpdesk/helpdesk-extend.css' type='text/css'  media="screen" >
+
+
+<!-- RSS -->
+<link rel='alternate' href='/rss/user/guser_Azskf/' type='application/rss+xml' title='My Open Tickets' />
+<link rel='alternate' href='/rss/recent_activity/' type='application/rss+xml' title='All Recent Activity' />
+<link rel='alternate' href='/rss/unassigned/' type='application/rss+xml' title='Unassigned Tickets' />
+
+<style type="text/css">
+/* hide google translate top bar */
+.goog-te-banner-frame {display: none !important;}
+.goog-te-balloon-frame {display: none !important;}
+/* hide google translate tooltips (generated for every translated item) */
+.goog-tooltip {display: none !important; }
+</style>
+
+<style type="text/css">
+/* header */
+#dropdown li.headerlink { width: auto; float: left; text-align: center; }
+
+/* query list */
+#dropdown li.headerlink ul {    display: none;
+                                text-align: left;
+                                position: absolute;
+                                padding: 5px;
+                                z-index: 2; }
+/* query entries */
+#dropdown li.headerlink:hover ul { display: block; width: auto; }
+#dropdown li.headerlink:hover ul li { padding: 5px; margin: 1px; float: none; display: block; }
+</style>
+
+
+
+
+
+
+
+<!-- jQuery and Bootstrap Core -->
+
+<script src="/static/helpdesk/vendor/jquery/jquery.min.js"></script>
+<script src="/static/helpdesk/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Core plugin JavaScript-->
+<script src="/static/helpdesk/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Page level plugin JavaScript-->
+<script src="/static/helpdesk/vendor/chart.js/Chart.min.js"></script>
+<script src="/static/helpdesk/vendor/datatables/js/jquery.dataTables.js"></script>
+<script src="/static/helpdesk/vendor/datatables/js/dataTables.bootstrap4.js"></script>
+<script src="/static/helpdesk/vendor/datatables/js/dataTables.buttons.js"></script>
+<script src="/static/helpdesk/vendor/datatables/js/buttons.colVis.js"></script>
+
+<!-- jQuery UI DatePicker -->
+<script src='/static/helpdesk/vendor/jquery-ui/jquery-ui.min.js' type='text/javascript' language='javascript'></script>
+<link href="/static/helpdesk/vendor/jquery-ui/jquery-ui.css" rel="stylesheet">
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/static/helpdesk/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/static/helpdesk/js/sb-admin.js"></script>
+
+
+
+
+
+</head>
+
+<body id="bg-dark">
+
+
+
+
+
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand" href="/">Helpdesk</a>
+
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0 mr-auto" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+
+
+      <!-- Navbar Search -->
+      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0" id='searchform' method='get' action="/tickets/">
+        <div class="input-group">
+          <input type="text" class="form-control" name='q' size='15' placeholder='Search...' id='search_query' title='Enter a keyword, or a ticket number to jump straight to that ticket.' aria-label="Search" aria-describedby="basic-addon2">
+          <input type='hidden' name='status' value='1' /><input type='hidden' name='status' value='2' /><input type='hidden' name='status' value='3' /><input type='hidden' name='search_type' value='header' />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+              <i class="fas fa-search"></i> Go
+            </button>
+          </div>
+        </div>
+        <input type="hidden" name="csrfmiddlewaretoken" value="giWJUQnJhgWPe0tKs96ho0NxskvebNYbyHGCDmAgqvSPailMoqaYFJifLK5sDRoJ">
+      </form>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav mr-md-0">
+
+
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+            MHadY DDfSU
+            <i class="fas fa-caret-down fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="/settings/"><i class="fas fa-fw fa-user-cog"></i> User Settings</a>
+            <a class="dropdown-item" href='/rss/'><i class="fas fa-fw fa-rss-square"></i> RSS Feeds</a>
+
+            <a class="dropdown-item" href="/password_change/"><i class="fas fa-fw fa-user-secret"></i> Change password</a>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item" href="/logout/"><i class="fas fa-fw fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <div id="wrapper">
+
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard/">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tickets/">
+            <i class="fas fa-fw fa-tasks"></i>
+            <span>All Tickets</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="ticketsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-search"></i>
+            <span>Saved Queries</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="ticketsDropdown">
+
+            <p class="dropdown-item small text-wrap">No saved queries currently available. You can create one in the All Tickets page.</p>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tickets/submit/">
+            <i class="fas fa-fw fa-plus-circle"></i>
+            <span>New Ticket</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/reports/">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/kb/">
+            <i class="fas fa-fw fa-database"></i>
+            <span>Knowledgebase</span>
+          </a>
+        </li>
+
+
+    </ul>
+
+
+        <div id="content-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Breadcrumbs-->
+                <ol class="breadcrumb">
+
+<li class="breadcrumb-item">
+    <a href="/tickets/">Tickets</a>
+</li>
+<li class="breadcrumb-item active">
+    SP-10
+</li>
+
+                </ol>
+
+
+
+
+
+
+
+
+<div class="card mb-3">
+    <!--div class="card-header">
+
+    </div -->
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm table-border">
+                <thead class="thead-light">
+                    <tr class=''><th colspan='4'><h3>SP-10. ofpkybsixussxlpxnbqq [Reopened]</h3>
+                            Queue: Some Product
+                            <span class='ticket_toolbar float-right'>
+                        <a href="/tickets/10/edit/" class="ticket-edit"><button class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> Edit</button></a>
+                    | <a href="/tickets/10/delete/" class="ticket-delete"><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button></a>
+                     | <a href="/tickets/10/hold/" class="ticket-hold"><button class="btn btn-warning btn-sm"><i class="fas fa-pause"></i> Hold</button></a>
+                    </span></th></tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th class="table-active">Due Date</th>
+                        <td>
+                        </td>
+                        <th class="table-active">Submitted On</th>
+                        <td>Aug. 16, 2021, 3:13 p.m. (2 years ago)</td>
+                    </tr>
+                    <tr>
+                        <th class="table-active">Assigned To</th>
+                        <td>MHadY DDfSU
+                        </td>
+                        <th class="table-active">Submitter E-Mail</th>
+                        <td> None
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-active">Priority</th>
+                        <td class="">3. Normal
+                        </td>
+                        <th class="table-active">Copies To</th>
+                        <td> <a data-toggle='tooltip' href='/tickets/10/cc/' title='Click here to add / remove people who should receive an e-mail whenever this ticket is updated.'><strong><button type="button" class="btn btn-warning btn-sm float-right"><i class="fa fa-share"></i></button></strong></a></td>
+                    </tr>
+
+                    <tr>
+                        <th class="table-active">Dependencies</th>
+                        <td>
+                            <a data-toggle='tooltip' href='/tickets/10/dependency/add/' title="Click on 'Add Dependency', if you want to make this ticket dependent on another ticket. A ticket may not be closed until all tickets it depends on are closed."><button type="button" class="btn btn-primary btn-sm float-right"><i class="fas fa-link"></i></button></a>
+
+                            This ticket has no dependencies.
+
+                        </td>
+                        <th class="table-active">Total time spent</th>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th class="table-active">Attachments</th>
+                        <td colspan="3">
+                            <ul>
+
+
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ticket-description" colspan='4'>
+                            <h4>Description</h4>
+                            <p>qnopkxbjgpuqqlkbsrqxvjotxhbybizenqsebwajgrlbnazjzn</p></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <a href='#FurtherEditOptions'><button type="button" class="btn btn-sm btn-warning float-right" onclick="$('#FurtherEditOptions').fadeIn()"><i class="fas fa-pencil-alt"></i>&nbsp;Edit details</button></a>
+        </div>
+        <!-- /.table-responsive -->
+    </div>
+    <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+
+
+
+
+
+            <div class="card mb-3">
+                <div class="card-header"><i class="fas fa-clock fa-fw fa-lg"></i>&nbsp;Follow-Ups</div>
+                <div class="card-body">
+                    <div class="list-group">
+
+                        <div class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Assigned to guser_Azskf</h5>
+                                <small><i class="fas fa-clock"></i>&nbsp;<span class='byline text-info'>by guser_Azskf, <span title='Aug. 23, 2023, 7:19 p.m.'>now</span> </span></small>
+                            </div>
+                            <p class="mb-1">
+
+
+                                    <div class='changes'><ul>
+                                    <li>Changed Owner from None to guser_Azskf.</li>
+                                    </ul></div>
+
+
+                            </p>
+                            <!--- ugly long test to suppress the following if it will be empty, to save vertical space -->
+
+
+                        </div>
+                        <!-- /.list-group-item -->
+
+                    </div>
+                    <!-- /.list-group -->
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+
+
+        <div class="card mb-3">
+            <div class="card-header">Respond to this ticket</div>
+            <div class="card-body">
+
+        <form method='post' action='update/' enctype='multipart/form-data'>
+
+        <fieldset>
+            <dl>
+
+
+                <dt><label for='commentBox'>Comment / Resolution</label></dt>
+                <dd><textarea rows='8' cols='70' name='comment' id='commentBox'></textarea></dd>
+                <dd class='form_help_text'>You can insert ticket and queue details in your message. For more information, see the <a href='../../help/context/'>context help page</a>.</dd>
+
+                <dt><label>New Status</label></dt>
+
+
+
+                <dd><div class="form-group">
+                    <label for='st_reopened' class='active radio-inline'><input type='radio' name='new_status' value='2' id='st_reopened' checked='checked'>Reopened &raquo;</label>
+                    <label class="radio-inline" for='st_resolved'><input type='radio' name='new_status' value='3' id='st_resolved'>Resolved &raquo;</label>
+                    <label class="radio-inline" for='st_closed'><input type='radio' name='new_status' value='4' id='st_closed'>Closed &raquo;</label>
+                    <label class="radio-inline" for='st_duplicate'><input type='radio' name='new_status' value='5' id='st_duplicate'>Duplicate</label>
+                </div></dd>
+
+
+
+
+
+
+                <dt>
+                    <label for='id_public'>Is this update public?</label> <span class='form_optional'>(Optional)</span>
+                </dt>
+                <dd><input type='checkbox' name='public' value='1' checked='checked' />&nbsp; Yes, make this update public.</dd>
+                <dd class='form_help_text'>If this is public, the submitter will be e-mailed your comment or resolution.</dd>
+
+
+
+                <dt>
+                    <label for='id_time_spent'>Time spent</label> <span class='form_optional'>(Optional)</span>
+                </dt>
+                <dd><input name='time_spent' type="time" /></dd>
+
+            </dl>
+
+        <p id='ShowFurtherOptPara'><button class="btn btn-warning btn-sm" id='ShowFurtherEditOptions'>Change Further Details &raquo;</button></p>
+
+        <div id='FurtherEditOptions' style='display: none;'>
+
+            <dl>
+
+                <dt><label for='id_title'>Title</label></dt>
+                <dd><input type='text' name='title' value='ofpkybsixussxlpxnbqq' /></dd>
+
+                <dt><label for='id_owner'>Owner</label></dt>
+                <dd><select id='id_owner' name='owner'><option value='0'>Unassign</option><option value='2' >6CisJgeTmGaZAmDJbOZhNTVWo5NePhIeghiqeKCMILojj2b9s</option><option value='1' >admin</option><option value='5' >guser1</option><option value='31' selected>guser_Azskf</option><option value='13' >guser_BUCvh</option><option value='16' >guser_cITVx</option><option value='19' >guser_cIvxO</option><option value='23' >guser_CLQEH</option><option value='40' >guser_cQZum</option><option value='27' >guser_dhLUJ</option><option value='9' >guser_DpLTk</option><option value='39' >guser_dZiMg</option><option value='7' >guser_eaawi</option><option value='32' >guser_FoXLh</option><option value='21' >guser_gLqkb</option><option value='50' >guser_GOtPI</option><option value='43' >guser_iIorM</option><option value='33' >guser_iIQVs</option><option value='41' >guser_JShYN</option><option value='15' >guser_kjZdI</option><option value='20' >guser_kMhKM</option><option value='37' >guser_kmsDX</option><option value='28' >guser_ksdSW</option><option value='17' >guser_mdCQT</option><option value='45' >guser_mhxip</option><option value='10' >guser_MpJDV</option><option value='36' >guser_MVriW</option><option value='12' >guser_nrRXr</option><option value='6' >guser_OdohW</option><option value='22' >guser_pBKXR</option><option value='18' >guser_QcCvz</option><option value='49' >guser_RJHAi</option><option value='38' >guser_rYrJe</option><option value='42' >guser_SfVFw</option><option value='47' >guser_svmnb</option><option value='29' >guser_tJDNH</option><option value='48' >guser_uVuky</option><option value='34' >guser_UzOhh</option><option value='8' >guser_wdLZJ</option><option value='24' >guser_whsxo</option><option value='26' >guser_wYlQv</option><option value='35' >guser_XBMRL</option><option value='30' >guser_xLFEh</option><option value='46' >guser_yDEHX</option><option value='25' >guser_YKxyL</option><option value='44' >guser_zTXdp</option><option value='14' >guser_zZqrX</option><option value='3' >pS5BSeFgn.N5eRjJDi-vh.GqwV_ZOLlxIi</option><option value='51' >quvyvwej</option><option value='4' >U89a_gwTYyUXGqRRIi0L3TQNy80VcqWdb7g</option><option value='11' >user123</option></select></dd>
+
+                <dt><label for='id_priority'>Priority</label></dt>
+                <dd><select id='id_priority' name='priority'><option value='1'>1. Critical</option><option value='2'>2. High</option><option value='3' selected='selected'>3. Normal</option><option value='4'>4. Low</option><option value='5'>5. Very Low</option></select></dd>
+
+                <dt><label for='id_due_date'>Due on</label></dt>
+                <dd><input type="text" name="due_date" class="form-control" autocomplete="off" id="id_due_date"></dd>
+
+            </dl>
+
+        </div>
+
+        <p id='ShowFileUploadPara'><button class="btn btn-warning btn-sm" id='ShowFileUpload'>Attach File(s) &raquo;</button></p>
+
+        <div id='FileUpload' style='display: none;'>
+
+            <dl>
+                <dt><label for='id_file'>Attach a File</label></dt>
+                <dd>
+                    <div class="add_file_fields_wrap">
+                        <button class="add_file_field_button btn btn-success btn-xs">Add Another File</button>
+                        <div><label class='btn btn-primary btn-sm btn-file'>
+                                Browse... <input type="file" name='attachment' id='file0' style='display: none;'/>
+                        </label><span>&nbsp;</span><span id='selectedfilename0'>No files selected.</span></div>
+                    </div>
+                </dd>
+            </dl>
+
+        </div>
+
+        </fieldset>
+
+        <button class="btn btn-primary float-right" type='submit'>Update This Ticket</button>
+
+        <input type="hidden" name="csrfmiddlewaretoken" value="giWJUQnJhgWPe0tKs96ho0NxskvebNYbyHGCDmAgqvSPailMoqaYFJifLK5sDRoJ"></form>
+
+            </div>
+        </div>
+
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+
+<!-- Sticky Footer -->
+<footer class="sticky-footer">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span>Powered by <a href='https://github.com/django-helpdesk/django-helpdesk'>django-helpdesk</a>.</span>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+<script type='text/javascript' language='javascript'>
+$( function() {
+	$( "#id_due_date" ).datepicker({dateFormat: 'yy-mm-dd'});
+} );
+</script>
+
+<script type='text/javascript' language='javascript'>
+$(document).ready(function() {
+    $("#ShowFurtherEditOptions").click(function() {
+        $("#FurtherEditOptions").toggle();
+        return false;
+    });
+
+    $("#ShowFileUpload").click(function() {
+        $("#FileUpload").fadeIn();
+        $("#ShowFileUploadPara").hide();
+        return false;
+    });
+
+    $('#id_preset').change(function() {
+        preset = $('#id_preset').val();
+        if (preset != '') {
+            $.get("/raw/preset/?id=" + preset, function(data) {
+                $("#commentBox").val(data)
+            });
+        }
+    });
+
+    $("[data-toggle=tooltip]").tooltip();
+
+    // lists for file input change events, then updates the associated text label
+    // with the file name selected
+    $('.add_file_fields_wrap').on('fileselect', ':file', function(event, numFiles, label, browseButtonNum) {
+        $("#selectedfilename"+browseButtonNum).html(label);
+    });
+
+    var x = 0;
+    var wrapper         = $(".add_file_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_file_field_button"); //Add button ID
+
+    $(add_button).click(function(e){ //on add input button click
+        x++;
+        e.preventDefault();
+        $(wrapper).append("<div><label class='btn btn-primary btn-sm btn-file'>Browse... <input type='file' name='attachment' id='file" + x + "' multiple style='display: none;'/></label><span>&nbsp;</span><span id='selectedfilename" + x + "'>No files selected.</span></div>"); //add input box
+    });
+
+});
+
+// this function listens for changes on any file input, and
+// emits the appropriate event to update the input's text.
+// Needed to have properly styled file input buttons! (this really shouldn't be this hard...)
+$(document).on('change', ':file', function() {
+    var input = $(this),
+        inputWidgetNum = $(this).attr('id').split("file")[1],
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [numFiles, label, inputWidgetNum]);
+});
+</script>
+
+
+</body>
+</html>
+
+
